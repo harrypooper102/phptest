@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+*, html, body{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: "Bungee Inline", cursive;
+  text-decoration: none;
+}
+.uldiv, .logodiv{
+  display: inline-block;
+}
+.logodiv{
+  width: 5%;
+}
+.logodiv img{
+  display: block;
+  border: 1px white solid;
+  border-radius: 5px;
+  width: 100%;
+  margin: 10px;
+}
+.uldiv{
+  color: white;
+  width: 94%;
+  margin-left: 10px;
+}
+.logo{
+  position: absolute;
+  top: 0;
+  width: 65px;
+  height: 65px;
+}
+nav{
+  padding: 5px;
+  background-color: black;
+  height: 75px;
+  vertical-align: middle;
+  position: sticky;
+  top: 0px;
+}
+.nav_ul li{
+  padding: 10px;
+  padding-left: 20px;
+  display: inline-block;
+  transition: 0.25s;
+}
+.nav_ul li:hover, .nav_ul li:focus{
+  transform: scale(1.05);
+}
+.nav_ul a{
+  font-size: 23px;
+  color: white;
+}
+.top{
+  margin: 0 auto;
+  width: 100%;
+  min-height: 500px;
+  background-image: url(images/headback.jpg);
+  background-position:top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.title{
+  text-align: center;
+  padding-top: 20px;
+  color: black;
+  font-size: 80px;
+}
+.header{
+  text-align: center;
+  color: black;
+  font-size: 60px;
+}
+.subtitle{
+  font-size: 40px;
+  text-align: center;
+}
+.background{
+  width: 100%;
+  min-height: 500px;
+  background-color: rgba(252, 252, 252, 0.5)
+} /*How are we trying to layout the images?*/
+/*Why do we have to use flexbox specifically?*/
+.fixed{
+  position: fixed;
+}
+.login{
+  float: right;
+  margin-right: 15px;
+}
+#login_div form {
+  line-height: 1.8;
+  width: 40%;
+  background-color: rgba(250, 250, 250, 0.7);
+  justify-content: center;
+  align-items: center;
+  border: rgba(250, 250, 250, 0) 1px solid;
+  border-radius: 10px;
+  padding: 15px;
+  padding-bottom: 30px;
+  font-size: 30px;
+  text-align: center;
+  margin: 60px auto;
+}
+#admin_div form {
+  line-height: 1.8;
+  width: 40%;
+  background-color: rgba(250, 250, 250, 0.7);
+  justify-content: center;
+  align-items: center;
+  border: rgba(250, 250, 250, 0) 1px solid;
+  border-radius: 10px;
+  padding: 15px;
+  padding-bottom: 30px;
+  font-size: 30px;
+  text-align: center;
+  margin: 60px auto;
+}
+.register {
+  line-height: 1.8;
+  width: 70%;
+  background-color: rgba(250, 250, 250, 0.7);
+  justify-content: center;
+  align-items: center;
+  border: rgba(250, 250, 250, 0) 1px solid;
+  border-radius: 10px;
+  padding: 15px;
+  padding-bottom: 30px;
+  font-size: 30px;
+  margin-top: 60px;
+  text-align: center;
+  margin: 20px auto;
+}
+table{
+  text-align: center;
+  border-collapse: collapse;
+  margin: 0 auto;
+  min-width: 500px;
+}
+th,td{
+  border: black solid 1px;
+  padding: 10px;
+}
+.cart{
+  width: 70%;
+  text-align: center;
+  margin: 50px auto;
+  background-color: rgba(250, 250, 250, 0.7);
+  border: rgba(250, 250, 250, 0) 1px solid;
+  border-radius: 10px;
+  padding: 15px;
+  padding-bottom: 30px;
+}
+.change {
+  line-height: 1.8;
+  width: 50%;
+  background-color: rgba(250, 250, 250, 0.7);
+  justify-content: center;
+  align-items: center;
+  border: rgba(250, 250, 250, 0) 1px solid;
+  border-radius: 10px;
+  padding: 15px;
+  padding-bottom: 30px;
+  font-size: 30px;
+  margin-top: 60px;
+  text-align: center;
+  margin: 20px auto;
+}
+.col-6{
+  display: inline-block;
+  width: 49%;
+}
+.cartdouble{
+  margin: 0px;
+  width: 90%;
+  display: inline-block;
+  padding: 10px;
+}
+.info{
+  background-color: rgba(250, 250, 250, 1);
+  padding: 15px;
+  width: 80%;
+  margin: 0 auto;
+  border: rgba(250, 250, 250, 0) 1px solid;
+  border-radius: 10px;
+}
+input{
+  border: black solid 2px;
+  border-radius: 5px;
+  padding: 5px;
+  width: 70%;
+}
+small{
+  font-size: 15px;
+}
+.registerbtn{
+  /*width: 10%;*/ /*commenting this out, makes the button text too long for the button*/
+  font-size: 18px;
+  margin-top: 20px;
+  background-color: #0E88A6;
+  border: rgba(0,0,0,0);
+  border-radius: 5px;
+}
+.loginbtn{
+  width: 20%;
+  font-size: 18px;
+  margin-top: 20px;
+  background-color: #0E88A6;
+  border: rgba(0,0,0,0);
+  border-radius: 5px;
+}
+#addressbtn {
+  width: 40%;
+  font-size: 18px;
+  margin-top: 20px;
+  background-color: #0E88A6;
+  border: rgba(0,0,0,0);
+  border-radius: 5px;
+}
+.adminbtn{
+  width: 40%;
+  font-size: 18px;
+  margin-top: 20px;
+  background-color: #0E88A6;
+  border: rgba(0,0,0,0);
+  border-radius: 5px;
+}
+small a{
+  color: #0089FF;
+}
+.page_header{
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  width: 100%;
+}
+.items {
+  background-color: white;
+  width: 100%;
+  margin: 10px;
+  flex: 4;
+  font-size: 20px;
+  border: 1px grey solid;
+  text-align: center;
+  transition: 0.25s;
+}
+.text{
+  width: 60%;
+  background-color: rgba(0, 0, 0, 1);
+  margin: 0 auto;
+  color: white;
+  margin-top: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.items:hover{
+  transform: scale(1.02);
+}
+.within{
+  padding: 10px;
+}
+.within img{
+  max-width: 400px;
+  min-height: 350px;
+  max-height: 350px;
+  margin: 0 auto;
+  margin-top: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.container{
+  background-color: black;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+nav {
+  z-index: 1000;
+}
+a{
+  width: 0;
+}
+.error{
+  background-color: #ff0000;
+  text-align: center;
+  font-size: 15px;
+}
+.eachdino{
+  padding: 20px;
+  color: white;
+  background-color: black;
+  border: 1px black solid;
+  border-radius: 10px;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
+}
+.eachdino p{
+  width: 70%;
+  margin: 0 auto;
+  line-height: 1.2;
+  padding: 10px
+}
+.eachdino img{
+  border: 1px black solid;
+  border-radius: 10px;
+  max-width: 500px;
+  max-height: 450px;
+}
+.success {
+  background: #00ff00;
+  text-align: center;
+  font-size: 15px;
+}
